@@ -35,20 +35,17 @@ For basic needs, Python's standard library includes the csv module.
 ----------------------------------------------------------------------------
 '''
 
-import csv
+import csv # importing csv module 
 
 # write CSV
-with open("data.csv", "w", newline="") as f:
-    writer = csv.writer(f)
-    writer.writerow(["Name", "Age"])
+with open("data.csv", "w", newline="") as f:    # newline="" ensures that rows are not separated
+                                        # by any newlines in between
+    writer = csv.writer(f)  #csv.writer is an object of file that helps to write data in a file
+    #                                                               in a CSV format data
+    writer.writerow(["Name", "Age"])    #writer is just a variable 
     writer.writerow(["Rajiv", 20])
     writer.writerow(["Samir", 21])
 
-# read CSV
-with open("data.csv", "r") as f:
-    reader = csv.reader(f)
-    for row in reader:
-        print(row)
 
 '''
 ----------------------------------------------------------------------------
