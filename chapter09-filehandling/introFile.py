@@ -50,7 +50,7 @@ with open("text.txt", "r") as f:
 
 
     #method - 3 to read file
-with open("text.txt") as f: # this is bydefault readmode
+with open("text.txt") as f: # this is by default readmode
     newlist = f.readlines()
     print(newlist)
 
