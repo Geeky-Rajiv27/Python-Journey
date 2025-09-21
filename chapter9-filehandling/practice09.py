@@ -4,6 +4,7 @@ write a program to read the text from the given file 'poems.txt' and find out
  wether it contains the word "their"
 -----------------------------------------------------------------------------------------
 
+'''
 
 with open("/Users/bheshu/Documents/PythonFull/chapter09-filehandling/poems.txt", "r") as readFile:
     fileContent = readFile.read()
@@ -15,13 +16,13 @@ with open("/Users/bheshu/Documents/PythonFull/chapter09-filehandling/poems.txt",
     else:
         print(f"No, file doesn't contain the word \"their\" ")
 
-'''
 
 '''
 -----------------------------------------------------------------------------------------
         Write a program to generate a multiplication table from 2 to 20 and write it in a
           different files and also place these all files in a folder. 
 -----------------------------------------------------------------------------------------
+'''
 
 import os
 
@@ -56,7 +57,6 @@ def tables(n):
 for i in range(1,21):
     tables(i)
 
-'''
 
 
 '''
@@ -64,6 +64,7 @@ for i in range(1,21):
         A file contain a word "Donkey" multiple times. You need to write a program which
          replace this word with #### by updating the same file
 -----------------------------------------------------------------------------------------
+'''
 
 
 # opening a file in a reading mode 
@@ -78,7 +79,6 @@ with open("Donkey.txt", "w") as writeFile:
    writeFile.write(replacedContent)
 
 
-'''
 
 '''
 -----------------------------------------------------------------------------------------
@@ -87,6 +87,7 @@ with open("Donkey.txt", "w") as writeFile:
 censor_words = ["bad", "ugly", "stupid", "fool", "hate", "dumb", "nonsense", "idiot", "lazy",
  "weak"]
 -----------------------------------------------------------------------------------------
+'''
 
 censor_words = ["bad", "ugly", "stupid", "fool", "hate", "dumb", "nonsense", "idiot", "lazy", "weak"]
 
@@ -103,13 +104,13 @@ print(replacedContent)
 with open("censorWords.txt", "w") as writeFile:
    writeFile.write(replacedContent)
 
-'''
 
 
 '''
 -----------------------------------------------------------------------------------------
     write program to find no. of the line that contain word "python"
 -----------------------------------------------------------------------------------------
+  '''
 
 
 with open("log.txt", "r") as readFile:
@@ -125,12 +126,12 @@ for line in AlllineContent:
 else: #this block will be executed only if for loop is completely executed
     print(f"No, there is no python")  
     
-  '''
      
 '''
 -----------------------------------------------------------------------------------------
     write a program to check if the content of one file matches content of another file
 -----------------------------------------------------------------------------------------
+'''
 
 with open("Donkey.txt", "r") as readFile:
     content1 = readFile.read()
@@ -142,5 +143,3 @@ if(content1 == content2):
 
 else:
     print("No, the content of both files aren't identical")
-
-'''
