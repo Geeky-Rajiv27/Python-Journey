@@ -106,7 +106,7 @@ class CurrentAccount(BankAccount):
 
 class FixedAccount(BankAccount):
     amount_to_be_added = 200000 # this is the amount that is going to be added to the balance after maturity date
-    maturity_date = datetime.strptime("2025-09-23", "%Y-%m-%d").date()
+    maturity_date = datetime.strptime("2028-09-23", "%Y-%m-%d").date()
     fixed_date = date.today()
     def __init__(self, Fixed_balance):
         self.Fixed_balance = Fixed_balance
@@ -138,19 +138,19 @@ b_acc.account_details() #checking account details
 
 
 # #Checking saving account features
-# s_acc = SavingsAccount(4000)
-# s_acc.add_interest()
-# s_acc.SavingAccount_details()
+s_acc = SavingsAccount(4000)
+s_acc.add_interest()
+s_acc.SavingAccount_details()
 
 
 # #Checking feature of Current bank account
 #     #NOTE CASE :1) withdrawing from the current balance (taking 1000 Rs loan from the bank)
-# c_acc = CurrentAccount(300000)
-# c_acc.Currentwithdraw()
-#   #case A : i want to withdraw Rs.500 that is possible then :
-#   #Case B : i want to withdraw total Rs.2000 using Rs 1000 of overdraft
-#   #case C : i want to withdraw Rs 5000 which is not possible
-# c_acc.CurrentAccount_details()
+c_acc = CurrentAccount(300000)
+c_acc.Currentwithdraw()
+  #case A : i want to withdraw Rs.500 that is possible then :
+  #Case B : i want to withdraw total Rs.2000 using Rs 1000 of overdraft
+  #case C : i want to withdraw Rs 5000 which is not possible
+c_acc.CurrentAccount_details()
 
 
 # #Checking feature of Fixed account

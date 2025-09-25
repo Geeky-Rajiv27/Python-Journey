@@ -18,11 +18,11 @@
 
 1)os.mkdir(path)    = this allows to make a new directory
 2)os.rmdir(path)    = this allows to delete an empty directory only
-3)os.getcwd()          = this provides current directory
+3)os.getcwd()       = this provides current directory path
 4)os.remove(path)   = this deletes a file 
 5)os.rename(source, destination) = renames a file or folder
 6)os.listdir(path)  = returns list of all directories
-7)os.chdir(path of directory to which to want to change) : changes the current working directory
+7)os.chdir(path of directory to which you want to change) = changes the current working directory
 8)os.path() :   
             Is a submodule that provides various functions for manipulation like :
             a)os.path.exists() : to check if file of given path exists already or not
@@ -64,7 +64,7 @@ print(f"New directory with name {directoryName} is created \n")
 # new directory can be created
 '''
 
-#example to move to the currently created new directory so we can create file   
+#example to move into the currently created new directory so we can create file   
 #inside it.
 os.chdir(directoryName)
 print(f"Directory is changed to {directoryName} \n")

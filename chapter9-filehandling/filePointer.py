@@ -8,8 +8,8 @@ ways to do:
     tell() : this tells the current position of the file reading cursor just 
             after writing or reading.
     
-    seek(position): helps us to move the positon of the reading pointer accor
-                ding to our will
+    seek(position): helps us to move the positon of the reading pointer cursor
+                according to our will
 '''
 
 with open("test.txt", "w") as fileforWrite:
