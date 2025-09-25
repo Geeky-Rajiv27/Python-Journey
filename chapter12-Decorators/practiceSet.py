@@ -55,6 +55,7 @@ d.brak()
         write a method 'salaryAfterIncrement' method with a @property decorator with a setter
         which changes the value of increment based on the salary
 -----------------------------------------------------------------------------------------------------
+'''
 
 class Employee:
     def __init__(self, salary, increment):
@@ -80,7 +81,6 @@ print(f"The salary after increment is : {emp.salaryAfterIncrement} $")
 emp.salaryAfterIncrement = 76000
 print(f"The salary after increment is : {emp.salaryAfterIncrement} $")
 
-'''
 
 
 '''-----------------------------------------------------------------------------------------------------
